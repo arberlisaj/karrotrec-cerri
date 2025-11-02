@@ -1,0 +1,92 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "Karrotrec Cerri | Shërbime Karrotreci & Ndihmë Rrugore",
+    template: "%s | Karrotrec Cerri",
+  },
+  description:
+    "Karrotrec Cerri ofron shërbime profesionale karrotreci dhe ndihmë rrugore 24/7 në gjithë Shqipërinë. Shërbim i shpejtë, i sigurt dhe i besueshëm.",
+  keywords: [
+    "karrotrec",
+    "karrotrec cerri",
+    "ndihmë rrugore",
+    "karrotrec tiranë",
+    "transport makinash",
+    "towing service",
+    "roadside assistance",
+    "auto transport",
+    "shërbim karrotreci",
+    "karrotrec shqipëri",
+    "tirana",
+    "astir",
+    "karrotrec afer meje",
+    "perplasje makine",
+    "afer meje karrotrec",
+    "bateri makine",
+    "gome makine",
+    "kriko makine",
+    "karrotrec perplasje",
+  ],
+  metadataBase: new URL("https://karrotrec-cerri.com"),
+  alternates: {
+    canonical: "https://karrotrec-cerri.com",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Karrotrec Cerri | Shërbime Karrotreci & Ndihmë Rrugore 24/7",
+    description:
+      "Shërbime karrotreci dhe ndihmë rrugore 24 orë në gjithë Shqipërinë. Profesionalizëm, shpejtësi dhe siguri nga Karrotrec Cerri.",
+    url: "https://karrotrec-cerri.com",
+    siteName: "Karrotrec Cerri",
+    locale: "sq_AL",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Karrotrec Cerri Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Karrotrec Cerri | Ndihmë Rrugore & Karrotrec 24/7",
+    description:
+      "Shërbime të besueshme karrotreci dhe ndihmë rrugore në gjithë Shqipërinë.",
+    images: ["/logo.png"],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="sq" className="scroll-smooth">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {children}
+      </body>
+    </html>
+  );
+}
