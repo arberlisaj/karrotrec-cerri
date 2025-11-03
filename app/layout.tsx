@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "https://karrotrec-cerri.com/og-image.jpg", // ✅ Use large OG image
         width: 1200,
         height: 630,
         alt: "Karrotrec Cerri Logo",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Karrotrec Cerri | Ndihmë Rrugore & Karrotrec 24/7",
     description:
       "Shërbime të besueshme karrotreci dhe ndihmë rrugore në gjithë Shqipërinë.",
-    images: ["/logo.png"],
+    images: ["https://karrotrec-cerri.com/og-image.jpg"], // ✅ Absolute path
   },
 };
 
