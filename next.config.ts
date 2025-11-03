@@ -1,7 +1,8 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // keep other options (images, experimental flags, etc.)
 };
 
 export default nextConfig;
