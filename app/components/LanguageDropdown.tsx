@@ -37,7 +37,7 @@ export default function LanguageDropdown() {
     <div className="relative" ref={ref}>
       <button
         onClick={() => setIsOpen((s) => !s)}
-        className="flex items-center gap-2 p-2 border rounded"
+        className="flex items-center gap-2 p-2 border border-gray-300 rounded"
       >
         <span>{current === "en" ? "🇺🇸" : "🇦🇱"}</span>
         <span className="text-sm font-medium">{current.toUpperCase()}</span>
