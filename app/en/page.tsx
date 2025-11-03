@@ -1,6 +1,5 @@
 import { Clock, MapPin, Phone, Shield, Truck, Wrench } from "lucide-react";
 import Link from "next/link";
-import SocialButtonsV1 from "../components/WhatsappButton";
 
 export const metadata = {
   title: "Karrotrec Cerri | Professional Vehicle Recovery & Transport",
@@ -189,3 +188,5 @@ export default function HomePageEn() {
     </>
   );
 }
+
+export const dynamic = "force-static";

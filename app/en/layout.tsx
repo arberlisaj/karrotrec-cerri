@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { Geist, Geist_Mono } from "next/font/google";

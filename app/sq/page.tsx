@@ -2,24 +2,23 @@ import { Clock, MapPin, Phone, Shield, Truck, Wrench } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Karrotrec Cerri | Professional Vehicle Recovery & Transport",
+  title: "Karrotrec Cerri | Transport & Ndihmë Profesionale për Automjete",
   description:
-    "Karrotrec Cerri offers 24/7 towing and roadside assistance in Albania. Fast, professional, and reliable vehicle recovery services.",
+    "Karrotrec Cerri ofron shërbime karrotreci dhe ndihmë rrugore 24/7 në gjithë Shqipërinë. Shërbim i shpejtë, profesional dhe i besueshëm për çdo rast.",
   keywords:
-    "Karrotrec Cerri, towing Albania, roadside assistance Albania, emergency towing, vehicle recovery, transport service, Tirana towing",
+    "Karrotrec Cerri, karrotrec Shqipëri, ndihmë rrugore Shqipëri, tërheqje emergjente, transport automjetesh, shërbim transporti, karrotrec Tiranë",
   openGraph: {
-    title: "Karrotrec Cerri - Reliable Towing in Albania",
+    title: "Karrotrec Cerri - Karrotrec i Besueshëm në Shqipëri",
     description:
-      "24/7 professional towing and roadside assistance across Albania. Call Karrotrec Cerri for reliable recovery services.",
+      "Shërbime profesionale karrotreci dhe ndihmë rrugore 24/7 në gjithë Shqipërinë. Kontaktoni Karrotrec Cerri për shërbime të shpejta dhe të sigurta.",
     type: "website",
     url: "https://karrotrec-cerri.com",
   },
 };
 
-export default function HomePageEn() {
+export default function HomePageSq() {
   return (
     <>
-      {/* Hero Section */}
       <section className="relative py-24 md:py-32">
         <div
           className="absolute inset-0 bg-cover bg-right bg-no-repeat"
@@ -30,26 +29,27 @@ export default function HomePageEn() {
         <div className="relative container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-200">
-              Reliable Towing & Roadside Assistance
+              Karrotrec & Ndihmë Rrugore të Besueshme
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-              Fast, professional towing and roadside services available 24/7.
-              Call us now for immediate assistance!
+              Shërbime të shpejta dhe profesionale karrotreci dhe ndihme
+              rrugore, të disponueshme 24/7. Na telefononi tani për ndihmë të
+              menjëhershme!
             </p>
             <a
               href="tel:+355684084444"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#ebebeb] text-[#333] rounded-lg font-medium hover:bg-[#d4d4d4] transition-colors"
             >
-              <Phone className="h-5 w-5" /> Call +355 68 408 4444
+              <Phone className="h-5 w-5" /> Telefononi +355 68 408 4444
             </a>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 pt-10 border-t">
             {[
-              { value: "10+", label: "Years in Business" },
-              { value: "10,000+", label: "Vehicles Towed" },
-              { value: "24/7", label: "Availability" },
-              { value: "100%", label: "Customer Satisfaction" },
+              { value: "10+", label: "Vite Eksperiencë" },
+              { value: "10,000+", label: "Automjete të Tërhequra" },
+              { value: "24/7", label: "Disponueshmëri" },
+              { value: "100%", label: "Kënaqësi e Klientëve" },
             ].map((stat, i) => (
               <div
                 key={i}
@@ -65,24 +65,24 @@ export default function HomePageEn() {
         </div>
       </section>
 
-      {/* Features */}
+      {/* Veçoritë */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               icon: Clock,
-              title: "24/7 Availability",
-              text: "Our team is available around the clock to provide immediate assistance whenever you need it.",
+              title: "Disponueshmëri 24/7",
+              text: "Ekipi ynë është gjithmonë në dispozicion për t’ju ndihmuar sa herë që ju nevojitet.",
             },
             {
               icon: Shield,
-              title: "Certified Professionals",
-              text: "Our team consists of certified professionals with years of hands-on towing experience.",
+              title: "Profesionalë të Certifikuar",
+              text: "Ekipi ynë përbëhet nga ekspertë me përvojë shumëvjeçare në fushën e karrotrecit.",
             },
             {
               icon: Truck,
-              title: "Fast Response",
-              text: "We pride ourselves on our quick response times to get you safely back on the road.",
+              title: "Reagim i Shpejtë",
+              text: "Krenohemi për kohën e reagimit të shpejtë, duke ju kthyer në rrugë sa më shpejt të jetë e mundur.",
             },
           ].map((f, i) => (
             <div
@@ -105,8 +105,8 @@ export default function HomePageEn() {
               Shërbimet tona të Karrotrecit & Ndihmës në Rrugë
             </h2>
             <p className="max-w-2xl mx-auto text-gray-200">
-              Zgjidhje gjithëpërfshirëse për të gjitha nevojat tuaja të
-              karrotrecit dhe ndihmës në rrugë
+              Zgjidhje gjithëpërfshirëse për çdo nevojë të karrotrecit dhe
+              ndihmës në rrugë
             </p>
           </div>
 
@@ -124,7 +124,7 @@ export default function HomePageEn() {
               },
               {
                 icon: MapPin,
-                title: "Tërheqje në Distanca të Gjatë",
+                title: "Tërheqje në Distanca të Gjata",
                 text: "Transport i sigurt dhe profesional i automjeteve në distanca të gjata brenda Shqipërisë.",
               },
               {
@@ -139,7 +139,7 @@ export default function HomePageEn() {
               },
               {
                 icon: Clock,
-                title: "Tërheqje me Orar të Paracaktuar",
+                title: "Tërheqje e Planifikuar",
                 text: "Rezervoni paraprakisht për transportet e planifikuara, riparime ose dorëzime.",
               },
             ].map((s, i) => (
@@ -169,20 +169,20 @@ export default function HomePageEn() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Thirrje për Veprim */}
       <section className="py-16 md:py-24 bg-white text-black text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Need Immediate Assistance?
+          Ju nevojitet ndihmë e menjëhershme?
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Contact us now for fast and reliable towing and roadside services
-          available 24/7.
+          Na kontaktoni tani për shërbime të shpejta dhe të besueshme karrotreci
+          dhe ndihme rrugore, të disponueshme 24/7.
         </p>
         <a
           href="tel:+355684084444"
           className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-black text-white rounded-lg font-medium hover:bg-[#333] transition-colors"
         >
-          <Phone className="h-5 w-5" /> Call +355 68 408 4444
+          <Phone className="h-5 w-5" /> Telefononi +355 68 408 4444
         </a>
       </section>
     </>

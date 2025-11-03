@@ -77,13 +77,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
