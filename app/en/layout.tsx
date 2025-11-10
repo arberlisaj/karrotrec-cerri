@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import SocialButtonsV1 from "../components/WhatsappButton";
 import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -53,6 +54,19 @@ export default function EnLayout({ children }: { children: React.ReactNode }) {
           content="https://karrotrec-cerri.com/logo.png"
         />
       </Head>
+
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17719994734"
+      />
+      <Script id="google-ads-tag">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17719994734');
+        `}
+      </Script>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
